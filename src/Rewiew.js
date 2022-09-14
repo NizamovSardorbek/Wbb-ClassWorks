@@ -80,7 +80,6 @@
 
 //  export agar bir xil nomlar kelib qolsa biz Card as Cards deb nomini uzimz xoxlagandek bervolsak boladi 
 
-// 
+// this.props.title yni props bu boshqa bir komponentda turib boshqa bir componentda malumotni tutib olishga aytiladi va qande nom bnn pros jonatga bolsak shu nom bn tutib olamz 
 
-
-
+//  children bu  closing teglaarni icida yozgan narsalarmzni this.props.children qilib tutib olamz 
