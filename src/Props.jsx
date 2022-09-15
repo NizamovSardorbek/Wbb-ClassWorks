@@ -42,6 +42,10 @@ class Props extends Component {
 }
 
 export default Props;
+// import vs export , export default, as
+// class 
+// div
+// jsx
 
 // this.props.title yani bergan nomimz orqali qayerda props kerak bolsa osha yerda yozamz
 // reactda qande nom bn jonatb yuborgan bolsak osha nom  bn  chaqrib olamz
