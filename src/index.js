@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Count from './Count';
 import './index.css';
-import Parent from "./Parent"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<Parent/>
+    <Count/>
   </React.StrictMode>
 );
 

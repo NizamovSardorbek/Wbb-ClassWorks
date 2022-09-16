@@ -83,3 +83,16 @@
 // this.props.title yni props bu boshqa bir komponentda turib boshqa bir componentda malumotni tutib olishga aytiladi va qande nom bnn pros jonatga bolsak shu nom bn tutib olamz 
 
 //  children bu  closing teglaarni icida yozgan narsalarmzni this.props.children qilib tutib olamz 
+
+
+// extends bu boshqa bir classdagi hususiyatlarni methotdlarni uzida ishlatolashga imkon beradi 
+
+// constructor qaysi biriga bersak parametr yuboraolish uchun ishlatamz (props)
+
+
+// super (props ) bu ham qoida yozilishi kerak 
+
+// constructor bu doim yozgan paytmzda qayerda yozilishdan qattiy nazar birinchi yuradi 
+
+
+// 

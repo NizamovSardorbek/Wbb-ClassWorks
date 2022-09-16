@@ -5,4 +5,5 @@ export const Parents = styled.div`
 `;
 export const Home = styled.h1`
   background-color: grey;
+ 
 `;
