@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Count from './Count';
+import GreenParent from './GreenParent';
 import './index.css';
+import Parentcount from './Parentcount';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Count/>
+    <GreenParent/>
   </React.StrictMode>
 );
 

@@ -30,7 +30,7 @@ class State extends Component {
           <h1>State : {this.state.count}</h1>
           <button onClick={minus}>-</button>
         </div>
-        <input onChange={Onchange} type="text" placeholder="name" />
+        {/* <input onChange={Onchange} type="text" placeholder="name" /> */}
       </div>
     );
   }

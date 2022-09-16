@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.sardor{
+  gap: 20px;
+}
+
+
+.top{
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  gap: 15px;
+}
+.Image1{
+  width: 100px;
+    height: 100px;
+}
+.Id{
+  line-height: 2px;
+  font-size: 12px;
+  margin-right: 60px;
+}
+.Dollor{
+  margin-right: 60px;
+}
+.ButtonPlus{
+  margin-right: 60px;
+}
