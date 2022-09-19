@@ -5,8 +5,8 @@ class GreenChild extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
-      counter: 0,
+      count: 1,
+      counter: 1,
       title: "",
     };
   }
@@ -25,6 +25,9 @@ class GreenChild extends Component {
 
     return (
       <div>
+        <h1>
+        {this.props.children}
+        </h1>
         <div className="Wrapper">
           <img src={this.props.ParentImage} alt="" />
           <div className="Wrap">

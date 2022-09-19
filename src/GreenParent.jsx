@@ -14,12 +14,14 @@ export class GreenParent extends Component {
           price="119"
           ParentImage={Image1}
         />
+
         <GreenChild
           home="Blushing Bromeliad"
           number="SKU: 19957518757065"
           price="179"
           ParentImage={Image2}
         />
+
         <GreenChild
           home="Barberton Daisy"
           number="SKU: 1995751877786"
