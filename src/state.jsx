@@ -10,12 +10,12 @@ class State extends Component {
   }
   render() {
     const plus = () => {
-      if (this.state.count < 10) {
+      if (this.state.count <= 10) {
         this.setState({ count: this.state.count + 1 });
       }
     };
     const minus = () => {
-      if (this.state.count > 1) this.setState({ count: this.state.count - 1 });
+      if (this.state.count >= 1) this.setState({ count: this.state.count - 1 });
     };
     const Onchange = (e) => {
       console.log(e.target.value);
