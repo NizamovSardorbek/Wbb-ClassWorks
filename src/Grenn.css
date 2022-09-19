@@ -3,3 +3,11 @@
     align-items: center;
     gap: 40px;
 }
+button{
+    border-radius: 30%;
+    border-color: green;
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    transition: ease-in-out;
+}

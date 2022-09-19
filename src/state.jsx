@@ -26,11 +26,11 @@ class State extends Component {
       <div>
         <h1>{this.state.title}</h1>
         <div style={{ display: "flex" }}>
-          <button onClick={plus}>+</button>
+          <button  onClick={plus}>+</button>
           <h1>State : {this.state.count}</h1>
           <button onClick={minus}>-</button>
         </div>
-        {/* <input onChange={Onchange} type="text" placeholder="name" /> */}
+        <input onChange={Onchange} type="text" placeholder="name" />
       </div>
     );
   }
