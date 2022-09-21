@@ -95,4 +95,4 @@
 // constructor bu doim yozgan paytmzda qayerda yozilishdan qattiy nazar birinchi yuradi 
 
 
-// 
+// CRUD
