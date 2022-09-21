@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Info extends React.Component {
+class Info extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,8 +13,6 @@ class Info extends React.Component {
     };
   }
   render() {
- 
-
     return (
       <div>
         <h1>Name</h1>
@@ -32,7 +30,7 @@ class Info extends React.Component {
           type="text"
         />
         <input
-          placeholder="check your email address"
+          placeholder="check your email addreess"
           onChange={(e) => this.setState({ email1: e.target.value })}
           type="email"
         />
@@ -44,11 +42,11 @@ class Info extends React.Component {
         <h2>Email Addres : {this.state.email2}</h2>
         <input
           type="text"
-          placeholder="check your info"
+          placeholder="check your infoo"
           onChange={(e) => this.setState({ first2: e.target.value })}
         />
         <input
-          placeholder="check your surname"
+          placeholder="check your surnamee"
           type="text"
           onChange={(e) => this.setState({ last2: e.target.value })}
         />
