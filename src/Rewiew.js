@@ -94,5 +94,6 @@
 
 // constructor bu doim yozgan paytmzda qayerda yozilishdan qattiy nazar birinchi yuradi 
 
+// setState asinxron funksya emas callvacbka oxshab kyuga otadi 
 
 // CRUD
