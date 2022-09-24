@@ -12,7 +12,9 @@ export class Table extends Component {
       name: "",
       age: "",
       search: "",
-      active: null,
+      selected: "",
+      newName: "",
+      newAge: "",
     };
   }
   render() {
@@ -27,7 +29,6 @@ export class Table extends Component {
         age: this.state.age,
       };
       this.setState({ data: [...this.state.data, user], name: "", age: "" });
-      console.log(user);
     };
     const Searching = () => {
       let res = this.state.data.filter((item) =>
@@ -35,9 +36,21 @@ export class Table extends Component {
       );
       this.setState({ data: res });
     };
-    const Edit = (id, name, age) => {
+    const Edit = (value) => {
+      this.setState({ selected: value });
+    };
+    const Cancel = () => {
+      this.setState({ selected: "" });
+    };
+    const Save = () => {
+      let res = this.state.data.map((value) =>
+        value.id === this.state.selected?.id
+          ? { ...value, name: this.state.newName, age: this.state.newAge }
+          : value
+      );
       this.setState({
-        active: { id, name, age },
+        data: res,
+        selected: null,
       });
     };
     return (
@@ -78,17 +91,45 @@ export class Table extends Component {
               this.state.data.map((value, index) => (
                 <tr key={value.id}>
                   <td>{index + 1}</td>
-                  <td>{value.name}</td>
-                  <td>{value.age}</td>
                   <td>
-                    <button onClick={() => onDelete(value.id)}>delete</button>
+                    {this.state.selected?.id === value.id ? (
+                      <input
+                        onChange={(e) =>
+                          this.setState({ newName: e.target.value })
+                        }
+                        type="text"
+                        defaultValue={this.state.selected.name}
+                      />
+                    ) : (
+                      value.name
+                    )}
                   </td>
                   <td>
-                    <button
-                      onClick={() => Edit(value.id, value.age, value.name)}
-                    >
-                      {this.state.active?.id === value.id ? " save" : "edit"}
-                    </button>
+                    {this.state.selected?.id === value.id ? (
+                      <input
+                        onChange={(e) =>
+                          this.setState({ newAge: e.target.value })
+                        }
+                        defaultValue={this.state.selected.age}
+                        type="number"
+                      />
+                    ) : (
+                      value.age
+                    )}
+                  </td>
+            
+                  <td>
+                    {this.state.selected?.id === value.id ? (
+                        <>
+                        <button onClick={Save}>save</button>
+                        <button onClick={Cancel}>cancel</button>
+                      </>
+                    ) : (
+                        <>
+                        <button onClick={() => onDelete(value.id)}>delete</button>
+                        <button onClick={() => Edit(value)}>Edit</button>
+                      </>
+                    )}
                   </td>
                 </tr>
               ))
