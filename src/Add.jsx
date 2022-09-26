@@ -26,10 +26,14 @@ export default class Add extends Component {
   }
   render() {
     const Add = () => {
-      let res = {
-        name: this.state.Adduser,
-      };
-      this.setState({ data: [...this.state.data, res], Adduser: "" });
+        if(this.state.Adduser.length ){
+
+            let res = {
+                id: this.state.data.length + 1,
+                name: this.state.Adduser,
+            };
+            this.setState({ data: [...this.state.data, res] , Adduser : "" });
+        }
     };
     const Ondelete = (ids) => {
       let res = this.state.data.filter((val) => val.id !== ids);

@@ -5,9 +5,9 @@ export class Parentcount extends Component {
   render() {
     return (
       <div>
-        <Count />
-        <Count />
-        <Count />
+        <Count type= "large"/>
+        <Count type="medium" />
+        <Count type="small" />
       </div>
     );
   }

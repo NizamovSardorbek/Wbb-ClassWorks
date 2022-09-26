@@ -8,7 +8,7 @@ export class GreenParent extends Component {
   render() {
     return (
       <div>
-        <GreenChild
+        <GreenChild 
           home="Barberton Daisy"
           number="SKU: 1995751877966"
           price="119"
