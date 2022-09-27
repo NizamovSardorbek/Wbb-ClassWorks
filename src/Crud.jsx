@@ -155,7 +155,7 @@ class Crud extends Component {
               ))
             ) : (
               <tr>
-                <h1>NODATA</h1>
+                <h1>No Data</h1>
               </tr>
             )}
           </tbody>
