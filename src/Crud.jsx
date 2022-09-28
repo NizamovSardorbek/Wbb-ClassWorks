@@ -110,7 +110,7 @@ class Crud extends Component {
               this.state.data.map((value, index) => (
                 <tr key={value.id}>
                   <td>{index + 1}</td>
-                  <td>
+                  <td>v
                     {this.state.selected?.id === value.id ? (
                       <input
                         onChange={(e) =>
