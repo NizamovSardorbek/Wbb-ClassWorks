@@ -12,7 +12,7 @@ class Crud extends Component {
         },
         {
           id: 2,
-          name: "Shoaziz",
+          name: "Sardor",
           age: 17,
         },
         {
@@ -94,11 +94,11 @@ class Crud extends Component {
           type="number"
           placeholder="Add Age"
         />
-        <button onClick={onAdd}>Addd</button>
+        <button onClick={onAdd}>Add</button>
         <table border="1">
           <thead>
             <tr>
-              <th>Id</th>
+              <th>Ids</th>
               <th>Name</th>
               <th>Age</th>
               <th>Action</th>
