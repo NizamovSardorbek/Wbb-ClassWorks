@@ -94,7 +94,7 @@ class Crud extends Component {
           type="number"
           placeholder="Add Age"
         />
-        <button onClick={onAdd}>Add</button>
+        <button onClick={onAdd}>Add user</button>
         <table border="1">
           <thead>
             <tr>
