@@ -6,7 +6,7 @@ export class Children extends Component {
     return (
       <div>
         <Home>
-          <Parents>Home</Parents>
+          <Parents>Home page</Parents>
           
         </Home>
         {/* {this.props.title}
