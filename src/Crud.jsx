@@ -69,26 +69,7 @@ class Crud extends Component {
     const onDelete = (ids) => {
       this.setState({ data: this.state.data.filter((val) => val.id !== ids) });
     };
-    const onSearch = ({ target: { value } }) => {
-      let res = this.state.data.filter((val) =>
-        val.name.toLowerCase().includes(value.toLowerCase())
-      );
-      this.setState({ data: res });
-    };
-    const onAdd = () => {
-      if (this.state.AddName.length) {
-        let user = {
-          id: Date.now(),
-          name: this.state.AddName,
-          age: this.state.AddAge,
-        };
-        this.setState({
-          data: [...this.state.data, user],
-          AddName: "",
-          AddAge: "",
-        });
-      }
-    };
+
     const onEdit = (value) => {
       this.setState({ selected: value });
     };
@@ -109,28 +90,8 @@ class Crud extends Component {
     };
     return (
       <div>
-        <div>
-          <h1>{this.state.AddAge}</h1>
-          <h1>{this.state.AddName}</h1>
-          <input onChange={onSearch} type="text" placeholder="Searching" />
-          <button onClick={onSearch}>Search</button> <br />
-          <input
-            value={this.state.AddName}
-            onChange={(e) => this.setState({ AddName: e.target.value })}
-            type="text"
-            placeholder="Add user"
-          />
-          <input
-            value={this.state.AddAge}
-            onChange={(e) => this.setState({ AddAge: e.target.value })}
-            type="number"
-            placeholder="Add Age"
-          />
-          <button onClick={onAdd}>Add user</button>
-        </div>
-
         <Container>
-          <Tables border="1">
+          <Tables>
             <Thead>
               <TR className="Ids" Ids="top">
                 <TH className="Ids2" Ids2="top2">
@@ -146,61 +107,55 @@ class Crud extends Component {
             </Thead>
 
             <TBody>
-              {this.state.data.length ? (
-                this.state.data.map((value, index) => (
-                  <TR key={value.id}>
-                    <TD className="Nums">{index + 1}</TD>
-                    <TD>
-                      {this.state.selected?.id === value.id ? (
-                        <input
-                          onChange={(e) =>
-                            this.setState({ NewName: e.target.value })
-                          }
-                          type="text"
-                          defaultValue={this.state.selected?.name}
-                        />
-                      ) : (
-                        value.name
-                      )}
-                    </TD>
-                    <TD>
-                      {this.state.selected?.id === value.id ? (
-                        <input
-                          onChange={(e) =>
-                            this.setState({ NewAge: e.target.value })
-                          }
-                          defaultValue={this.state.selected?.age}
-                          type="number"
-                        />
-                      ) : (
-                        value.age
-                      )}
-                    </TD>
-                    <TD>sardor</TD>
-                    <TD>sardor</TD>
-                    <TD>sardor</TD>
-                    <TD className="Action">
-                      {this.state.selected?.id === value.id ? (
-                        <BT>
-                          <Button onClick={onSave}>save</Button>{" "}
-                          <Button onClick={onCancel}>cancel</Button>
-                        </BT>
-                      ) : (
-                        <BT>
-                          <Button onClick={() => onDelete(value.id)}>
-                            delete
-                          </Button>
-                          <Button onClick={() => onEdit(value)}>edit</Button>
-                        </BT>
-                      )}
-                    </TD>
-                  </TR>
-                ))
-              ) : (
-                <tr>
-                  <h1>No Data</h1>
-                </tr>
-              )}
+              {this.state.data.map((value, index) => (
+                <TR key={value.id}>
+                  <TD className="Nums">{index + 1}</TD>
+                  <TD>
+                    {this.state.selected?.id === value.id ? (
+                      <input
+                        onChange={(e) =>
+                          this.setState({ NewName: e.target.value })
+                        }
+                        type="text"
+                        defaultValue={this.state.selected?.name}
+                      />
+                    ) : (
+                      value.name
+                    )}
+                  </TD>
+                  <TD>
+                    {this.state.selected?.id === value.id ? (
+                      <input
+                        onChange={(e) =>
+                          this.setState({ NewAge: e.target.value })
+                        }
+                        defaultValue={this.state.selected?.age}
+                        type="number"
+                      />
+                    ) : (
+                      value.age
+                    )}
+                  </TD>
+                  <TD>Aziz</TD>
+                  <TD>sardor</TD>
+                  <TD>sardor</TD>
+                  <TD className="Action">
+                    {this.state.selected?.id === value.id ? (
+                      <BT>
+                        <Button onClick={onSave}>save</Button>{" "}
+                        <Button onClick={onCancel}>cancel</Button>
+                      </BT>
+                    ) : (
+                      <BT>
+                        <Button onClick={() => onDelete(value.id)}>
+                          delete
+                        </Button>
+                        <Button onClick={() => onEdit(value)}>edit</Button>
+                      </BT>
+                    )}
+                  </TD>
+                </TR>
+              ))}
             </TBody>
           </Tables>
         </Container>

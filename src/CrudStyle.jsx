@@ -45,7 +45,8 @@ export const Container = styled.div`
     
   }
 `;
-export const Tables = styled.table``;
+export const Tables = styled.table`
+`;
 export const Button = styled.button`
   color: red;
   border-radius: 15px;
