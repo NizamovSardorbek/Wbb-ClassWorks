@@ -99,7 +99,7 @@ class Crud extends Component {
                 </TH>
                 <TH>Name</TH>
                 <TH>Age</TH>
-                <TH>Name</TH>
+                <TH>Surname</TH>
                 <TH>Name</TH>
                 <TH>Age</TH>
                 <TH className="Action">Action</TH>
