@@ -19,7 +19,7 @@ class Onchange extends Component {
     };
     const onchangeinfo = ({ target }) => {
       this.setState({
-        info: { ...this.state.info , name : target.value},
+        info: { ...this.state.info, name: target.value },
       });
     };
     return (
