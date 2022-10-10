@@ -13,6 +13,7 @@ export const Container = styled.div`
     top: 0px;
     z-index: 999;
     background: white;
+    text-align: center;
   }
   .Ids2 {
     color: red;

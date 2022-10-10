@@ -135,3 +135,18 @@
 // ishledi boshqa bir state yoki boshqa narsa ozgarganda ishleamde
 // 8 casee 4  case 3ni multiple xolati yani arreyga bir 
 // qanca stateni biriktrb qoyamz va yozgnlarmzda case 4 ishledi
+
+
+
+ //////////                U  S  E      R  A  D  U  C  E  R            //////////
+ //////////                U  S  E      R  A  D  U  C  E  R            //////////
+
+
+ // 1 yasalishi useraducerni reactda chaqrb olamz va bita state yaratab oshanga reducerni tenglan olamz
+// yani odatiy state count va odatda ikkinci qiymat dispatch deyiladi
+// 2 userdeucer uziga ikkita qiymat oladi birinchi qiymat callback ikkinchisi initial state yani boshlangic xolat
+// 3 useraducer doim return qiymatiga qaytishi shart yani bir marta return qilganmzda callbackdagi funksya ishledi
+// 4  yani nmaga retrurn qilsak count yani birinci qiymat ana shunga teng boladis
+// 5 callback funksya state hamda actionni iciga oladi
+// 6 state counterga teng
+// 7 action esa bu dispatchda berlgan paramater yani prop deylik
