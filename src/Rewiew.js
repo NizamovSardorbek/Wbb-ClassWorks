@@ -150,3 +150,25 @@
 // 5 callback funksya state hamda actionni iciga oladi
 // 6 state counterga teng
 // 7 action esa bu dispatchda berlgan paramater yani prop deylik
+
+
+
+// 1 birinchu export nom berb createContext qilib contextni chaqirb olamz yani alohida context papkada
+// 2 biita export qilamz va nom beramz va malumotamzni context papkamzda shyu nom bnn orab qoaymz
+// 3 va shu bergan nomimznii rootda yani indexda borib orab qoyamz yani ekranda chiqayotkan barcha malumotlarni
+// 4 children berib yuboramz yani props sifatida yani Provider bergamzga ham tepada parentcontextga ham
+// 5  va mana shu yerda chikdrenni orab turganga qoshimcha .Provider berib qoyamz
+// 6 va  biz mana shu yerda state yaratb olamz va bu state childerndan pasda bolish kerak
+// 7 va yaratagan contextmizda icidan value sifatida stateni  berib yuboramz
+
+
+
+
+// 8 birinchi Contextni import qivolamz yani u rootda tutvolganmzni emas Provider qilib yaratgan contextni tutvolamz
+
+// 9 bu yerda contextda yaratga stateni yaratamz va useContext qilib  caqrgan contextmzni qiymat qilib use Contextda berib yuboramz
+
+
+
+// 10 bu yerda ham provider berilgan contextni tutvolamz import qilib
+// 11  bu yerda ham contextda yaratga stateni yaratamz va useContext qilib  caqrgan contextmzni qiymat qilib use Contextda berib yuboramz
