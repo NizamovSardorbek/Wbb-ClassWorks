@@ -142,14 +142,23 @@
  //////////                U  S  E      R  A  D  U  C  E  R            //////////
 
 
- // 1 yasalishi useraducerni reactda chaqrb olamz va bita state yaratab oshanga reducerni tenglan olamz
-// yani odatiy state count va odatda ikkinci qiymat dispatch deyiladi
-// 2 userdeucer uziga ikkita qiymat oladi birinchi qiymat callback ikkinchisi initial state yani boshlangic xolat
-// 3 useraducer doim return qiymatiga qaytishi shart yani bir marta return qilganmzda callbackdagi funksya ishledi
-// 4  yani nmaga retrurn qilsak count yani birinci qiymat ana shunga teng boladis
-// 5 callback funksya state hamda actionni iciga oladi
-// 6 state counterga teng
-// 7 action esa bu dispatchda berlgan paramater yani prop deylik
+// 1 state ochamz va statimzni ikki qiymatga ega birinchisi  oddiy nom ikkinchisida dispatch deymz va
+// useReducer() deb tenglab qoyamz
+// 2 useReducer ikkia qiymat oladi useRedducer(()=>{}, 0) calback funksiya hamda  initial qiymat
+// 3 dispatchni qayerda funksiya ishlatmoqchiu bolsak osha yerga calback funksiya bn funksiya sifatida yozamz
+// 3 yani dispatch use reducer deb yaratgan funskyamzga teng
+// 4 tepadiga funksiyamz return qiymatiga qaytishi shart
+//  tepadagii calback funksyamz oz iciga (state,action) oladi
+// 5 pasda dispatchda biz {type: "plus"} yani prop sifatida type beramz obyektda
+// 6 biz qaysi funksiyani ishlayotkann bilishmz  ucun switchcase  eng yaxshi vaeriant
+// 7 switch caseda biz action.type yani actiondan kelyotkann typeni tekshramz
+// 8 biz tepada emas nmaga ozgarishini pasda aytshmz ham mumkin
+// 9 pasda biz yana qoshmca parametr beramz yani payload :5
+// 10 va tepada action.payload deb qande amal bajarmoqci bolsak oshani yoniga yozamz
+
+
+ //////////                U  S  E      C  O  N  T  E  X  T            //////////
+ //////////                U  S  E      C  O  N  T  E  X  T            //////////
 
 
 
