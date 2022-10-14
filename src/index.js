@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import Raduceruse from './Raduceruse';
+import RootRouter from './RouterDom/RootRouter';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Raduceruse/>
+    <BrowserRouter>
+    <RootRouter/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
