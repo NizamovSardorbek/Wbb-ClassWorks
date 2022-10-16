@@ -12,7 +12,7 @@ const ContextNavbar = () => {
         <h1>Home</h1>
         <h1>About</h1>
         <h1>contact</h1>
-        <h1>Count : {state.length}</h1>
+        <h1>Count  :: {state.length}</h1>
       </WrapNavbar>
     </div>
   );
