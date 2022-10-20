@@ -6,7 +6,7 @@ import Home from "./Home";
 import { Wrap, WrapNavbar } from "./RouterStyle";
 
 const RouterNavbar = () => {
-  const style = { color: "red", fontSize: 70 };
+  const style = { color: "red", fontSize: 70, textDecoration: "none" };
   return (
     <WrapNavbar>
       <Wrap activeStyle={style} to="/home">
@@ -18,9 +18,17 @@ const RouterNavbar = () => {
       <Wrap activeStyle={style} to="/contact">
         Contact
       </Wrap>
-      <Wrap activeStyle={{ color: "red", fontSize: 70 }} to="/info">
+      <NavLink
+        style={{ textDecoration: "none", fontSize: "22px" }}
+        activeStyle={style}
+        to="/navlinks"
+      >
+        Navlinks
+      </NavLink>
+      <Wrap activeStyle={{ color: "blue", fontSize: 70 }} to="/info">
         info
       </Wrap>
+
     </WrapNavbar>
   );
 };

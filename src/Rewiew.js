@@ -38,14 +38,16 @@
 ////////////    R   E   A   C   T        ///////////////
 ////////////    R   E   A   C   T        ///////////////
 
-// react bu hamma foydalanishi mumkin bolgan kutubxoba  
-// nmaga react tez ishlaydi ? - single page application
+// react bu hamma foydalanishi mumkin bolgan tekn kutubxoba  
+// user interfecesni qurish uchun ishlatildgn javascript kutubxonasi
+
+// nmaga react tez ishlaydi ? - single page application 
 // reactda tortta asosiy hususiyat bor 1-vertual dom borligi  2-unidirectional data flow 3-components 3server Side rendering
 
 
 // 1 Virtual dom - rerender bolishini oladi yani vertual dom ishlatmasak biz ozgartradgn qismi ozgarmasda hammasini boshidan chizib kegn osha joyi ozgaradi
 // real dom bn vertualdomni farqi real domda child ozgarsa parentga tasiq qiladi verttualda esa tasir qilmaydi 
-// 2 component qism qismga bolib ishlashga aytiladi 
+// 2 component based qism qismga bolib ishlashga aytiladi 
 // 3 unidirectional data flow parentda childga malumot keladi lekin childddan parentga malumot bormedi 
 // 4 server Side Renderending bu beceknd tomondan manikulyatsiya qilib ekranga chiqarishga aytiladi buning afzalliklari data tez yuklanb becekndga borib kelib tez ekranga chiqadi biz bajarga amallarni sekin birinma ketn qilib utrmedi 
 
@@ -90,13 +92,36 @@
 // constructor qaysi biriga bersak parametr yuboraolish uchun ishlatamz (props)
 
 
-// super (props ) bu ham qoida yozilishi kerak 
+// super (props ) parametrni tutib olish 
 
 // constructor bu doim yozgan paytmzda qayerda yozilishdan qattiy nazar birinchi yuradi 
 
-// setState asinxron funksya emas callvacbka oxshab kyuga otadi 
+// sinxron bitta amal barajrlganda kegn kegngisini kelishini kutib turadi 
+
+// asinxron kutmedi shunde ishledi
+
+// setState asinxron funksya emas callbackga oxshab kyuga otadi 
+
 
 // CRUD
+
+
+// classname jsx faqat js exda agar biuz css ishlatsak u bn calkashbb ketmasligi 
+
+// Brouzer qande kodlarni birinci uqiydi - bririnci bolib brouzer html kodlarini kegn img kodlarin kegn kgn css kegn javascrpt
+
+// state bn props   State da ham Props da ham malumot rerender boladi
+//   farqi propsda huddi funcion dagi parametr ga oxhsab malumot componentga keladi
+//   State da esa malumot shu component ni ichida boladi
+//   Rerender uchunn State ishlatgan afzal
+
+
+// Life sycle statega malumot kiritlldimi uni qaytattan render qiberish 
+
+
+
+
+
 
  //////////                U  S  E      S  T  A  T  E             //////////
  //////////                U  S  E      S  T  A  T  E             //////////
@@ -121,7 +146,7 @@
 
 
  // 1 UseEffect componentni icidagi birorta state ozgarganida yoki prop kelsa ana shu use Effectni uzi ishledi
-// 2 UseEffectni bir tort hil caseda ishlataolamz
+// 2 UseEffectni biz tort hil caseda ishlataolamz
 // 3 UseEffect doim callback funksya sifatida ishlatiladi
 // 4 Case 1 biz stateni ozgartamzmi inputga malumot yozamzmi bizda case 1 ishledi
 // 5 Case 2 biz beckenddan malumot keladi yani biz case ikkinchini ishlatshmz ucun
@@ -129,7 +154,7 @@
 // yani birinchi paramater callback funksya ikkinchisi ess arrey arrey qoymasak
 // yani ikkinchi paramter bolmasa bu birinchi casee bolib qoladi
 // 6 case ikki component yurganda boshida bir marta yuradi boldi
-// 7 case bu dependensis yani bogliqlik yani biz arreyni iciga bir state 
+// 7 case 3 bu dependensis yani bogliqlik yani biz arreyni iciga bir state 
 // yoki ozgartradigan narsamzni yozamz va osha ozgarsa case 3 ishledi yana
 // ham tushinarli aytadgan bolsa case uc qaysi qiymatni berb qoygan bolsa osha pzgarganda
 // ishledi boshqa bir state yoki boshqa narsa ozgarganda ishleamde
@@ -162,7 +187,7 @@
 
 
 
-// 1 birinchu export nom berb createContext qilib contextni chaqirb olamz yani alohida context papkada
+// 1 birinchi export nom berb createContext qilib contextni chaqirb olamz yani alohida context papkada
 // 2 biita export qilamz va nom beramz va malumotamzni context papkamzda shyu nom bnn orab qoaymz
 // 3 va shu bergan nomimznii rootda yani indexda borib orab qoyamz yani ekranda chiqayotkan barcha malumotlarni
 // 4 children berib yuboramz yani props sifatida yani Provider bergamzga ham tepada parentcontextga ham
@@ -195,7 +220,7 @@
 
 // Router-dom reactni multiple page applicationga ozgartirib beradi
 
-// 1 birinchi routerdomni beshinchisni ishlatsh uchun npm i react-router-
+// 1 birinchi routerdomni beshinchisni ishlatsh uchun npm i react-router-dom@5
 
 // 2 Eng kotta rootni BrowserRouterga orashmz kerak bu react-router-domdan keladi
 
