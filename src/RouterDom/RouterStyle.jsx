@@ -9,7 +9,7 @@ export const WrapNavbar = styled.div`
 `;
 
 export const Wrap = styled(NavLink)`
-margin-top: 40px;
+  margin-top: 40px;
   font-size: 38px;
   text-decoration: none;
   color: black;

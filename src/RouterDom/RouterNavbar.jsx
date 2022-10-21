@@ -28,7 +28,6 @@ const RouterNavbar = () => {
       <Wrap activeStyle={{ color: "blue", fontSize: 70 }} to="/info">
         info
       </Wrap>
-
     </WrapNavbar>
   );
 };

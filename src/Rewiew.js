@@ -45,17 +45,21 @@
 // reactda tortta asosiy hususiyat bor 1-vertual dom borligi  2-unidirectional data flow 3-components 3server Side rendering
 
 
-// 1 Virtual dom - rerender bolishini oladi yani vertual dom ishlatmasak biz ozgartradgn qismi ozgarmasda hammasini boshidan chizib kegn osha joyi ozgaradi
-// real dom bn vertualdomni farqi real domda child ozgarsa parentga tasiq qiladi verttualda esa tasir qilmaydi 
+// 1 Virtual dom - rerender bolishini oladi yani vertual dom ishlatmasak biz ozgartradgn qismi ozgarmasda hammasini boshidan chizib kegn osha joyi ozgaradi vertual dom real domni memorysida joylashadi
+// UI copyni saqlab oladi real dom bn vertualdomni farqi real domda child ozgarsa parentga tasir qiladi verttualda esa tasir qilmaydi 
 // 2 component based qism qismga bolib ishlashga aytiladi 
 // 3 unidirectional data flow parentda childga malumot keladi lekin childddan parentga malumot bormedi 
+// bi Directional data flow uni directional data flow farqi ?
+// bi directional data flow har tarafga malumotm jonab ketovradi uni directionalda esa faqat parentdan childga
+
+
 // 4 server Side Renderending bu beceknd tomondan manikulyatsiya qilib ekranga chiqarishga aytiladi buning afzalliklari data tez yuklanb becekndga borib kelib tez ekranga chiqadi biz bajarga amallarni sekin birinma ketn qilib utrmedi 
 
 // babel react  bu yangi avlod yani brauzer eskitta bor  biz yozgan kodni javascript kodiga aylantrish yani javascriptga uzini tiliga otkazb buyruq beradi  
 
 
 
-
+// Browser birinci bolib html file keladi kegn assets kegn css va js boladi eng katta dawnload qilish ucun js boladi
 
 ///////////  K I R I SH ///////////////
 
@@ -119,8 +123,12 @@
 // Life sycle statega malumot kiritlldimi uni qaytattan render qiberish 
 
 
+// Pure component nma ? 
 
 
+// should component update true bolsa malumot update qiladi false bolsa update qimedi
+
+// listlarda nmaga key ishlatiladi
 
 
  //////////                U  S  E      S  T  A  T  E             //////////
@@ -274,3 +282,15 @@
 // 25 goForward esa oldinga
 
 // 25 useLocation bu usehistory bn bir xil shunga ishlatilmedi
+
+
+
+
+
+//  J S X javascript . create elementni  sintaksis sugarsi
+//
+
+
+
+// valudation
+
