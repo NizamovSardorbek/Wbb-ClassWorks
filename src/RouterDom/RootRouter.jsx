@@ -74,6 +74,7 @@ export default RootRouter;
 //                                                <home />
 //                                           </Route>
 
+
 // 14 yonalish beryotkanda yoki yonalish qabul qilyotkanda stringni icida / belgisi bolishi shart
 
 // 15 agar proektmz yurganda yani tepada urlga avtamat yonalish berish uchun Redirect berb qoyamz
