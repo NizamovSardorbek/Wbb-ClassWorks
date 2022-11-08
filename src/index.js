@@ -2,15 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
+import RouterDomSix from './Router6/RouterDomSix';
 import RootRouter from './RouterDom/RootRouter';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-           <RootRouter/>
-    </BrowserRouter>
+<RouterDomSix/>
   </React.StrictMode>
 );
 
