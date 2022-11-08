@@ -360,7 +360,7 @@
 //   1. VIrtual dom
 //   2. Components
 //   3. Server SIte rendering
-//   4. UniDirectioonal DataFlow
+//   4. UniDirectioonal DataFlow...
 
 // 4. Virtual dom nima
 //   Vitual dom real domni ichida joylashgan
