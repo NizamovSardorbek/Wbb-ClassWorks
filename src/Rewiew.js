@@ -297,3 +297,163 @@
 
  //////////                U  S  E      R  O  U  T  E  R --  D  O  M  6       //////////
  //////////                U  S  E      R  O  U  T  E  R --  D  O  M  6       //////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// React nima
+// Uni xususiyatlari
+// Qanaqa qilib brawserda chiqishi jsx da yozilgan codeni
+// Jsx nima ekanligi
+// UseState
+// UseReducer
+// UseEffect caselari va asosan 3 tasi nima vazifani bajarishi
+// Class component bn functional component farqi
+// Prop bn state farqi
+// Setstate dagi callbeck
+// Koproq parent child mi child parent ishlatiladimi
+// Children Parent nima
+// Router dom nimaga kere
+// Router domda outlet nima
+// Use Params nima
+// Router domni codeni tasavvur qilib hayolan ishlatib berish
+// Context Api nima qanaqa ishlidi
+// Nega react single page
+// Router domda Switch nima
+// Conditional Rendering 
+// Cotroller -uncontroller nima
+
+//  1. React js nima
+//   User Interfeysni yasash uchun ishlatiladigan JS kutubxonasi
+// 2. JSX nima
+//   Javascript exemel
+//   Html ichida JS
+//   Js ichida Html ishlatish uchun
+//   qisqasi sintaksis sugra
+// 3. React  JS ni asosiy xususiyatlari niam?
+//   1. VIrtual dom
+//   2. Components
+//   3. Server SIte rendering
+//   4. UniDirectioonal DataFlow
+
+// 4. Virtual dom nima
+//   Vitual dom real domni ichida joylashgan
+//   Eski UI componentdan bn yani UI component ni taqqoslaydi
+//   ozgargan qismni update qiladi.
+
+// 5. UniDirectional DataFlow nima?
+//   Bir tomonlama ma`lumot oqimi
+//     Directional DataFlow da malumot hohlagan joyiga qarab ketadi(Parent-Child, Child-Parent)
+//     UniDirectional Data Flow da faqat yuqoridan pastga harakat qiladi (Parent-Child, Child-Child, Child-grandChild)
+// 6. Tarnery yoki OR (qaysi biini ishlatgan yaxshi)
+//   OR ishlatadigan bolsak bizga ekranda 0 qaytishi mumkin, 
+//   Tarnery da biz shart togri va natogri bolfan xolatlarini kuzata olamiz
+//   Tarnery foydalangan afza
+
+// 7. Nimaga class ClassName ga ozgargan
+//   style dagi class va reactdagi Class chalkashmasligi uchun
+
+// 8. Server site rendering nma?
+//   Browser web sahifani quyidagi daqa yukledi:
+//     1. HTML
+//     2. Assets
+//     3. CSS
+//     4. JS
+//   JS yuklanganda qoshimcha ravishda ReactJS ha yuklanadi, eng uzoq yuklash JS da boladi
+//   Server site rendering da esa  malumotni backend ga yuboradi , backendda tayyor UI keladi
+
+// 9.  State bn Props ni qabnday farqi bor, qaysi biri afzal
+
+//   State da ham Props da ham malumot rerender boladi
+//   farqi propsda huddi funcion dagi parametr ga oxhsab malumot componentga keladi
+//   State da esa malumot shu component ni ichida boladi
+//   Rerender uchunn State ishlatgan afzal
+
+// 10. Prop Driling nima
+//   Qiymatni Parent-Child, CHild-CHild, CHilde- Grand CHild ga otishi,
+//   buni  orniga Context API ishlatgan afzal,  chuni bizda 5-6 ta component boladigan bolsa, kodi  juda noqulay bolib ketadi
+
+// 11. Use State nima?
+//   UseState functional componentdagi State, ishlashi bir xil faqatgina bu qulayroq versiyasi
+//   ichidan 2 ta qiymatni distrakcha qib olamiz birinchisi State  boladi, ikinchisi SetState bolad
+// 12. UseEffect nima?
+//   Class componentsdagi lifycyclani qisqa  versiyasi
+//   agarda 2-qiymatga hech nima berilmasa -   har bir ozgarishda ishlaydi
+//   agar 2-qiymat sifatida bosh massiv berlsa - proect ishga tushganda 1marta ishlaydi
+//   agar 2-qoymat sifatida massiv ihcida biror ozfaruvchi yoki function berilsa, ayan ushbu function ustida amal bajarilganda ishlid
+//   2-qiymatda massiv ichida bir nechta ozgaruvchilar beriish mumkin
+
+// 13. Context API nima?
+//   Prop diriling ni osonroq versiyasi
+//   bita ombor yasaladi va ushbu omborga murojat qilish orqali hohlagan compoenent da ombor ichidagi malumotni ishlata olamiz
+
+
+// 1.React nima ?
+// UI ni qurish uchun ishlatiladigan js libruarysi. Asosan single page aplication.
+// 2.Xususiyatlari?
+// Virtual Dom Components Server Side Rendering Unidirectional data flow har birini izohlab berish
+// 3. Babel yordamida js ga ogiradi va u brawserga korsatadi. Birinchi bolib html assets css js fayllani
+// 4.JSX nima?
+// JSX – Javascript Syntax XML.Jsx bu reactni asosi desak boladi.Yana biz Jsx orqali Js fileda javascript va html codelarini yoza olamiz.Bu saytni juda tez ishlashiga xizmat qiladi va logikani osonlashtiradi.
+// 5. UseState?
+// React hooksda statelarni ishlatish uchun useState kerak boladi. 
+// 6. UseReducer?
+// Stateni alternativ shakli.
+// 7. UseEffect caselari? 
+//  case1 -> har doim render bolishi uchun
+//   useEffect(() => {})
+//  case2 -> bir marta sayt refresh bolganda yurishlik uchun
+//   useEffect(() => {}, [])
+// case3 -> state render bolmaguncha kutish
+//   useEffect(() => {}, [count])
+//  case4 -> multipul , argumentdagi statelarini bir ozgarsa keyin render boladi 
+//   useEffect(() => {}, [count, data, nimadur])
+// 8. UseEffect asosiy 3 tasi?
+// ComponentDidmount, ComponentDidUpdate, shouldComponentUpdate
+
+// 9. Class comp functional comp?
+// Reactni oldingi versiyalarida faqatgina class componentlar ishlatilingan lekin classdagi muammolar functional component yaratilishiga sabab bolgan.
+// Class componentda this, this.props, this.state, this.setState, constructor, super, render husisiyatlari ortiqcha hisoblanadi va hozirda functionality. componentda bunday atamalar olib tashlangan.
+// 10.prop vs state?
+// State da ham props da ham malumot rerender boladi. Farqi props huddi functional dagi parametrga oxshab componentga malumot jonaadi.
+// State da bolsa malumot ozini ichida boladi
+// 11. Setstate dagi callback
+// Buni aniq javob bilmadim ozimni javobim tori notoriligini bilmiman.
+// 12.koproq parent child sababi parent dan turib child ga malumot uzatamiz.
+// 13. Children Parent da ham Children ochib Unga nom berib parentga ushbu nomni chaqirib olish
+// 14. React single page bolgani uchun uni multiple page qilishga kere
+// 15. Outlet bu huddi contexdagi childrenga oxshaydi.Yani Parent childrenlar , Outletga kelib tushadi va Parent ozining childrenlari qayerda korishini belgilab beradi 
+// 16. useParams bu urldagi paramsda malumot olish.Tasavur qiling sizda 10card bor va Ularning ustiga bosilsa yanada toliq malumot korsatish kerak (‘olx.uz kabi’).Bir cardni ustiga bosak yangi page ochilishi kerak.Hosh endi 10ta card uchun 10ta page ochiladimi 🤔🤔.1000ta cardingiz bolsachi 1000da component va page 😨😨.
+// Yoq also bunday holatda siz useParamsda cardlarni idlarini tutib olib.1000ta card bolsa ham 1 page va 1 component ochasiz va Params id orqali filter qilib qoyasiz!!!
+// 17. Bunda Usha navbar Yana olamiz va path to ni ishlatib location beramiz
+// 18. Contaxt api bilasiz
+// 19. Chunki u bitta html dan tashkil topgan
+// 20. Buniyam aylantirdim aniq javob yo
+// 21. Bu mangamas Shoazizgatushgan
+// 22. Controller doimiy render qb turadi uncontroller Esa unaqamas
