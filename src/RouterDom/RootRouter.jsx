@@ -70,7 +70,7 @@ export default RootRouter;
 // 10 biz Routeni ichiga path degan atrebut beramz
 // 11 pathda biz navbardan to qilib icida   jonatgan buyruqni yozamz example path={/home}
 // 12 component atrebuti ichida  Hec qande belgilarsz icida component={home}
-// 13 agar proplar ishlamoqci bolsak ->     <Route path={"/home"}>
+// 13 agar proplar ishlamoqci bolsak =>     <Route path={"/home"}>
 //                                                <home />
 //                                           </Route>
 
