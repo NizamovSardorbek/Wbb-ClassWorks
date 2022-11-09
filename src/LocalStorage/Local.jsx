@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Local = () => {
+    const [count,setCount] = useState(0)
   return (
-    <div>Local</div>
+    <div>
+        <h1>Count : {count}</h1>
+    </div>
   )
 }
 
