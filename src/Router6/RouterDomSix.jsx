@@ -27,3 +27,5 @@ export default RouterDomSix;
 // 6 element yani home bolsa shu pageni chiqar degani
 // 7 navbarga otamz va navbarda bitta ozgaruvchi ocib router domdan useNavigate olib kelb  tenglab qoyamz
 // 8 endi biz qaysini ustiga bossak otishi ucuin onlick bolganda deymz pathlarga Example :  <h1 onClick={() => navigate("/home")}>Home</h1>
+// 9 Link yani pageda pagega utish ucun navbarda har birini Linkga orab qoyamz
+// 10 va linkni icida to="/home" yonalishini berb yuboramz

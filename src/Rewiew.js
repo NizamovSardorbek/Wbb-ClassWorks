@@ -374,7 +374,7 @@
 // 6. Tarnery yoki OR (qaysi biini ishlatgan yaxshi)
 //   OR ishlatadigan bolsak bizga ekranda 0 qaytishi mumkin, 
 //   Tarnery da biz shart togri va natogri bolfan xolatlarini kuzata olamiz
-//   Tarnery foydalangan afza
+//   Tarnery foydalangan afzal
 
 // 7. Nimaga class ClassName ga ozgargan
 //   style dagi class va reactdagi Class chalkashmasligi uchun
