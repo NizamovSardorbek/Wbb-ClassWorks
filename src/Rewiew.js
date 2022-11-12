@@ -300,7 +300,7 @@
  //////////                L  O  C  A  L     S  T  O  R  A  G  E       //////////
  //////////                L  O  C  A  L     S  T  O  R  A  G  E       //////////
 
- 
+
  // biz bir pagega kirganmzda oxirgi manzil qande bolsa shunde  qolishi ucun localstorage kerak boladi
 
 // 1 malumotni set yani broweserga saqlash ucun localstorage.setItem('count' , count + 1) yani bitta ixtiyoriy nom beramz yani browserda saqlash ucun
@@ -320,6 +320,49 @@
 // JSON.stringify({data: count + 1})  yani xotiraga saqlash
 
 // 6 cJSON.parse(localStorage.getItem("count")); bu xotiradagi malumotni tutib olish ucun arrey objektlarga
+
+
+
+ //////////                U  S  E      R   E    F      //////////
+ //////////                U  S  E      R   E    F      //////////
+
+// 1 controller hamda uncontrollerni rootga opkelamz biz solishtrishmz ucun
+// 2 bizga ekranda malumot yangilanishi kerakmi useref ishlatamz  
+// 3 biz bir ozgaruvci ocamz  va useRef("") deb belglab qoyamz   const title = useRef("");
+// 4 inputga ref={title} yani ref deb malumotni ozgaruvciga yani userefga saqlab olamz
+// 5 endi biz yozgan malumotimzni kormoqci bolsak 
+// <button onClick={() => alert(title.current.value)}>Click</button>; yani title teng useRefga titleni icida current keladi currentni icida value
+
+
+// buni biz shu ekranga malumotni chiqarshni hohlamasak va shunga oxshash xolatlarda ishlatamz
+
+
+
+ //////////                U  S  E     M   E    M    O      //////////
+ //////////                U  S  E     M   E    M    O      //////////
+
+// biz parentni ozgartrsak child ham render boladi buni oldini olish uchun memo ishlatamz yani
+// 1  childni export qilyotkan joyimzdan memo(MemoNavbar) qip oreymiz
+// 2 hamma narsani memo yani xotiraga olishdan mano yoq yani faqat uzimzga kerakligini va childni olishimiz kerak
+// shunda biz parentni ozgartirganmzda child render bolishini oldini olamz
+// 3 ikkita qoidasi bolishi kerak memoni ishlatishimiz uchun birinchisi child bolishi kerak
+// 4 va rerender boladigan bir malumot bolishi kerak parentda
+// 5 useMemo parentda ishlatiladi yani parentda props sifatida bir malumotni
+// childga yuborsak va biz parentda malumotni ozgartirsak child ham render boladi
+// 6 buni oldini olish ucun  const data = useMemo(() => {
+//   return { title: "Webbrain" };
+// }, []); va props qilib yuboryotkan  joyimzda datani yuboramz
+// 7 use memo doim valuega return qiladi yani obyektni malumotlariga
+// 8 memo bn use memoni asosiy farqi memo childga beriladi usememo esa parentga
+// 9 useCalback funksionga return qiladi use memo esa valuega
+// 10 useCalback bn useMemoni yana asosiy farqi biz memoda tutib olganmzdan kegn uni ozgartirib bolmedi lekn useCalbackda esa
+// biz qoshimca parametr qilib <h1>Navbar : {dataCall("About").title} </h1> yani yerda parentga malumot yuborishmz va parentda
+// const dataCall = useCallback((param) => {
+//   return { title: param };
+// }, []); bundey tarzda tutib  olishimz mumkin
+
+
+
 
 
 
@@ -485,3 +528,14 @@
 // 20. Buniyam aylantirdim aniq javob yo
 // 21. Bu mangamas Shoazizgatushgan
 // 22. Controller doimiy render qb turadi uncontroller Esa unaqamas
+
+
+
+
+
+
+
+
+
+
+
