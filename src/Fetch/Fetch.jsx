@@ -17,7 +17,7 @@ const Fetch = () => {
   }, []);
   const getinfo = (id) => {
     console.log(id);
-    fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
+    fetch(`https://houzing-app.herokuapp.com/api/v1/houses`, {
       // method: "post",
     })
       .then((response) => response.json())
@@ -66,3 +66,7 @@ export default Fetch;
 
 // 7 biz malumotni bitta usestatega tenglab qoysak setStudent qilib response beramz lekn bu rerender bolib qayta qayta ishlayveradi
 // buni oldini olish ucun esa useEffectga orab qoyamz fetchni yani ikkinci casega bir marta ishledi boldi
+
+////          S      W      A      G      G      E      R          ////
+////          S      W      A      G      G      E      R          ////
+
