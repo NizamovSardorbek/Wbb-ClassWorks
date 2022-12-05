@@ -17,7 +17,7 @@ const Fetch = () => {
   }, []);
   const getinfo = (id) => {
     console.log(id);
-    fetch(`https://houzing-app.herokuapp.com/api/v1/houses`, {
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
       // method: "post",
     })
       .then((response) => response.json())
@@ -68,5 +68,5 @@ export default Fetch;
 // buni oldini olish ucun esa useEffectga orab qoyamz fetchni yani ikkinci casega bir marta ishledi boldi
 
 ////          S      W      A      G      G      E      R          ////
-////          S      W      A      G      G      E      R          ////
+///          S      W      A      G      G      E      R          ////
 

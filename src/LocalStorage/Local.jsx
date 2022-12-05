@@ -35,7 +35,7 @@ export default Local;
 // yani ozgargan qiymat stateda boladi stateni initial xolatiga beramz  
 // cont [count,setCount] = useState(0), edi buni , const [count, setCount] = useState(Number(localStorage.getItem("count"))); qilb ozgartramz
 
-// 3 // endi biz xotiradagi malumotni ucrb tashlashmz ucun  bitta buttonga onclik funksiyasida   onClick={() => localStorage.removeItem("count")}
+// 3 endi biz xotiradagi malumotni ucrb tashlashmz ucun  bitta buttonga onclik funksiyasida   onClick={() => localStorage.removeItem("count")}
 // beramz yani xotiradagi qaysi malumotni ucrmoqci ekanmzni beramz biz delete bosganmzda malumot xotirada ocadi lekn yana malumotni yangilasak 
 // eski malumot keladi yani yangitta boshlamedi boshlashi ucun esa refreshni bosamz
 
