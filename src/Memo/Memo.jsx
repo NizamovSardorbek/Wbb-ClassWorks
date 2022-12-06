@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import { useCallback } from "react";
 import { useMemo } from "react";
 import { useState } from "react";

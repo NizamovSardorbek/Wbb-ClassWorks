@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import { useState } from "react";
 
 const MemoNavbar = ({ data, dataCall }) => {
   console.log("child render");
