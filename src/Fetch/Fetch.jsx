@@ -62,7 +62,7 @@ const Fetch = () => {
         {students.map((value) => (
           <h1 key={value.id}>
             Name : {value.id} {value.name}
-            <button onClick={() => getInfo(value.id)}> get info </button>
+            <button onClick={() => getInfo(value.id)}> getinfo </button>
           </h1>
         ))}
       </div>
