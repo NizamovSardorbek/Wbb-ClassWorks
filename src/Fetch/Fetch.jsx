@@ -3,48 +3,75 @@ import { useState, useEffect } from "react";
 
 const Fetch = () => {
   const [students, setStudents] = useState([]);
-  const [id, setId] = useState(null);
   const [select, setSelect] = useState({});
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users", {
-      // method: "post",
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        console.log(response);
-        setStudents(response);
-      });
-  }, []);
-  const getinfo = (id) => {
-    console.log(id);
-    fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
-      // method: "post",
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        console.log(response);
-        setSelect(response);
-      });
+
+  const getUsers = (id) => {
+    return fetch(
+      `https://jsonplaceholder.typicode.com/users/${id ? `/${id}` : ""}`
+    ).then((response) => response.json());
   };
+  useEffect(() => {
+    getUsers().then((response) => setStudents(response));
+  }, []);
+
+  const getInfo = (id) => {
+    getUsers(id).then((response) => {
+      setSelect(response);
+    });
+  };
+
+  // const getinfo = (id) => {
+  //   console.log(id);
+  //   fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
+  //     // method: "post",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((response) => {
+  //       console.log(response);
+  //       setSelect(response);
+  //     });
+  // };
   return (
+    // <div
+    //   style={{
+    //     display: "flex",
+    //   }}
+    // >
+    //   <div>
+    //     {students.map((value) => (
+    //       <h1 key={value.id}>
+    //         Name : {value.id} {value.name}
+    //         <button onClick={() => getinfo(value.id)}>get info</button>
+    //       </h1>
+    //     ))}
+    //   </div>
+    //   <div style={{ flex: 1 }}>
+    //     <div key={select?.id}>
+    //       <h1>Name :{select?.name} </h1>
+    //       <h2>Username :{select?.username} </h2>
+    //       <h3>Email :{select?.email} </h3>
+    //     </div>
+    //   </div>
+    // </div>
     <div
       style={{
         display: "flex",
       }}
     >
-      <div>
+      <div style={{ flex: 1 }}>
         {students.map((value) => (
           <h1 key={value.id}>
             Name : {value.id} {value.name}
-            <button onClick={() => getinfo(value.id)}>get info</button>
+            <button onClick={() => getInfo(value.id)}> get info </button>
           </h1>
         ))}
       </div>
+
       <div style={{ flex: 1 }}>
         <div key={select?.id}>
-          <h1>Name :{select?.name} </h1>
-          <h2>Username :{select?.username} </h2>
-          <h3>Email :{select?.email} </h3>
+          <h1>Name : {select?.name}</h1>
+          <h2>Username : {select?.username}</h2>
+          <h3>Email : {select?.email}</h3>
         </div>
       </div>
     </div>
@@ -69,4 +96,3 @@ export default Fetch;
 
 ////          S      W      A      G      G      E      R          ////
 ///          S      W      A      G      G      E      R          ////
-

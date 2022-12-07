@@ -27,5 +27,3 @@ export default Uncontroller;
 
 
 // buni biz shu ekranga malumotni chiqarshni hohlamasak va shunga oxshash xolatlarda ishlatamz
-
-
