@@ -9,7 +9,7 @@ const Login = () => {
       <span>
         password <input type="text" />
       </span>
-      <button>login</button>
+      <button>Login</button>
     </div>
   );
 };
