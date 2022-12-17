@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div>
       <span>
-        email <input type="text" />
+        email : <input type="text" />
       </span>
       <span>
         password <input type="text" />
