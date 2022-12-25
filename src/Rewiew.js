@@ -33,10 +33,10 @@
 
 
 
-////////////    R   E   A   C   T        ///////////////
-////////////    R   E   A   C   T        ///////////////
-////////////    R   E   A   C   T        ///////////////
-////////////    R   E   A   C   T        ///////////////
+////////////    R   E   A   C   T        ////////////////
+////////////    R   E   A   C   T        ////////////////
+////////////    R   E   A   C   T        ////////////////
+////////////    R   E   A   C   T        ////////////////
 
 // react bu hamma foydalanishi mumkin bolgan tekn kutubxoba  
 // user interfecesni qurish uchun ishlatildgn javascript kutubxonasi
